@@ -1,6 +1,5 @@
 package CompetitionResults;
 
-import java.util.Comparator;
 import java.util.Objects;
 
 public class PlayerResultInfo implements Comparable<PlayerResultInfo> {
@@ -68,14 +67,4 @@ public class PlayerResultInfo implements Comparable<PlayerResultInfo> {
         } else
             return -1;
     }
-
-
-//    @Override
-//    public int compare(PlayerResultInfo o1, PlayerResultInfo o2) {
-//        return Comparator.comparing(PlayerResultInfo::getFirstName)
-//                .thenComparing(PlayerResultInfo::getLastName)
-//                .thenComparing(PlayerResultInfo::getScore)
-//                .compare(o1, o2);
-//    }
-
 }

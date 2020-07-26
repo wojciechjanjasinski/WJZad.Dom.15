@@ -3,7 +3,7 @@ package CompetitionResults;
 import java.util.Scanner;
 
 public class ScannerPlayerResult {
-    final static String STOP_THE_SCANNER = "STOP";
+    final static private String STOP_THE_SCANNER = "STOP";
 
     public static String getStopTheScanner() {
         return STOP_THE_SCANNER;
@@ -23,6 +23,4 @@ public class ScannerPlayerResult {
         double fromUserScore = scanner.nextDouble();
         return new PlayerResultInfo(fromUserSportDiscipline, fromUserFirstName, fromUserLastName, fromUserScore);
     }
-
-
 }
