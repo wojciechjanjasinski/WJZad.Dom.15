@@ -8,8 +8,17 @@ public class Computer {
     private double ramMemory;
 
     public Computer(String name, double cpuSpeed, double ramMemory) {
+        if (name == null){
+            throw new NullPointerException("Nie można pozostawić tego pola pustego");
+        }
         this.name = name;
+        if (cpuSpeed == 0){
+            throw new NullPointerException("Nie można pozostawić tego pola pustego");
+        }
         this.cpuSpeed = cpuSpeed;
+        if (ramMemory == 0){
+            throw new NullPointerException("Nie można pozostawić tego pola pustego");
+        }
         this.ramMemory = ramMemory;
     }
 
