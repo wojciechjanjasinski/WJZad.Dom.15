@@ -10,10 +10,10 @@ public class ReadFromUserLoop {
         Scanner scanner = new Scanner(System.in);
         String userWantsToStop;
         do {
-            playerResultInfoSet.add(ScannerPlayerResult.scannerPlayerResultDetails());
+            playerResultInfoSet.add(ScannerPlayerResult.readPlayerDetailsFromUserPlayerResultDetails());
             System.out.println("Czy chcesz zakończyć wprowadzanie danych? Jeżeli tak wpisz \" STOP \" . \n Jeżeli nie wpisz dowolny ciąg liter i wciśnji klawisz ENTER, aby kontynować");
             userWantsToStop = scanner.next();
-        } while (!userWantsToStop.equals(ScannerPlayerResult.getStopTheScanner()));
+        } while (!userWantsToStop.equals(ScannerPlayerResult.STOP_THE_SCANNER));
         scanner.close();
         System.out.println(playerResultInfoSet);
         return playerResultInfoSet;

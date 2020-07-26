@@ -3,13 +3,9 @@ package CompetitionResults;
 import java.util.Scanner;
 
 public class ScannerPlayerResult {
-    final static private String STOP_THE_SCANNER = "STOP";
+    final static String STOP_THE_SCANNER = "STOP";
 
-    public static String getStopTheScanner() {
-        return STOP_THE_SCANNER;
-    }
-
-    public static PlayerResultInfo scannerPlayerResultDetails() {
+    public static PlayerResultInfo readPlayerDetailsFromUserPlayerResultDetails() {
         System.out.println("Witamy w programie \"Sports Results 0.0.1\" zapisującym wyniki zawodów sportowych do pliku! " +
                 "\n Aby zakończyć wprowadzanie danych do programu i wyświetlić wprowadzone dane wpisz prosze wielkimi literami komendę \"STOP\" po wpisaniu wyników pierwszego zawodnika ");
         Scanner scanner = new Scanner(System.in);
