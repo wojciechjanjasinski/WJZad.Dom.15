@@ -3,9 +3,9 @@ package ComputersList;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static ComputersList.SortMethodByCpu.groupMethodByCpu;
-import static ComputersList.SortMethodByName.groupMethodByName;
-import static ComputersList.SortMethodByRamMemory.groupMethodByRam;
+import static ComputersList.ComputerComparators.groupMethodByCpu;
+import static ComputersList.ComputerComparators.groupMethodByName;
+import static ComputersList.ComputerComparators.groupMethodByRam;
 
 public class ScannerAsUserWishesIt {
     public static void scannerOrderFromUser (ArrayList<Computer> computerArrayListFromUser){
